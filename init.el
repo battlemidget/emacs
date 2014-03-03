@@ -24,17 +24,14 @@
 
 (load-local "defuns")
 (load-local "misc")
-(when (eq system-type 'darwin)
-  (load-local "osx"))
 
-(load-theme 'zenburn :no-confirm)
+(load-theme 'ujelly :no-confirm)
 
 (add-hook 'emacs-startup-hook
           (lambda ()
             (when (string= (buffer-name) "*scratch*")
-              (animate-string ";; Yo moma is a dirty skank!" (/ (frame-height) 2)))))
+              (animate-string ";; i punch HAMSTARS!" (/ (frame-height) 2)))))
 
-
 ;;;; Packages
 
 (use-package hl-line
@@ -131,10 +128,6 @@
 
 (use-package windmove
   :config (windmove-default-keybindings 'shift))
-
-(use-package rvm
-  :init (rvm-use-default)
-  :config (setq rvm-verbose nil))
 
 (use-package ruby-mode
   :init
@@ -361,7 +354,9 @@
 (use-package swoop
   :bind ("C-o" . swoop))
 
-
+(use-package web-beautify
+  :bind ("C-c t" . web-beautify-js))
+
 ;;;; Bindings
 
 (bind-key "C-a" 'back-to-indentation-or-beginning-of-line)
@@ -410,10 +405,3 @@
  (lambda ()
    (interactive)
    (find-file (f-expand "init.el" user-emacs-directory))))
-
-
-;;;; Sandbox
-
-(let ((sandbox-path (f-expand "sandbox" user-emacs-directory)))
-  (when (f-dir? sandbox-path)
-    (-each (f--files sandbox-path (f-ext? it "el")) 'load)))
