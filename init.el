@@ -15,7 +15,6 @@
 (require 'ht)
 (require 'git)
 (require 'ert)
-(require 'evm)
 (require 'use-package)
 
 (setq default-directory (f-full (getenv "HOME")))
@@ -97,7 +96,7 @@
     (bind-key "C-c C-a" 'magit-just-amend magit-mode-map))
   :config
   (progn
-    (setq magit-emacsclient-executable (evm-emacsclient))
+    ;(setq magit-emacsclient-executable (emacsclient))
     (setq magit-default-tracking-name-function 'magit-default-tracking-name-branch-only)
     (setq magit-set-upstream-on-push t)
     (setq magit-completing-read-function 'magit-ido-completing-read)

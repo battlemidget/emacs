@@ -5,6 +5,7 @@
 /.cask
 /tramp
 /projectile.cache
+/projectile-bookmarks.eld
 /var
 /.mc-lists.el
 /sandbox
