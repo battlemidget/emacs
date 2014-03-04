@@ -1,0 +1,3 @@
+[submodule "yasnippets"]
+	path = yasnippets
+	url = git@github.com:battlemidget/yasnippets.git
