@@ -392,6 +392,7 @@
 
 (bind-key "C-M-h" 'backward-kill-word)
 (bind-key "C-c C-n" 'todo)
+(bind-key "C-c l" 'perltidy)
 
 (bind-key
  "C-x C-c"

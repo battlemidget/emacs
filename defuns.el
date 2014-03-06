@@ -298,3 +298,13 @@ them. These include the path relative to the project root."
           (progn
             (forward-char -2)
             (insert "(done) ")))))))
+
+
+;; custom functions
+;; cpanm --notest Perl::Tidy::Sweetened
+(defun perltidy ()
+  "Run perltidy on the current region or buffer."
+  (interactive)
+  (save-excursion
+    (unless mark-active (mark-defun))
+    (shell-command-on-region (point) (mark) "perltidier" nil t)))

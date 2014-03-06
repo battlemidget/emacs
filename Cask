@@ -41,6 +41,7 @@
 (depends-on "multiple-cursors")
 (depends-on "nvm")
 (depends-on "nyan-mode")
+(depends-on "org")
 (depends-on "pallet")
 (depends-on "plenv")
 (depends-on "popwin")
