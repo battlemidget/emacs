@@ -1,17 +1,13 @@
-# rejeep emacs [![Build Status](https://api.travis-ci.org/rejeep/emacs.png?branch=master)](http://travis-ci.org/rejeep/emacs)
-
-This is my emacs configuration files. If you want to use them, the
-best thing is probably to fork the project at Github
-(<http://github.com/rejeep/emacs>) and then make your changes to that
-branch.
+# battlemidget emacs (f0rked)
 
 ## Installation
 
-First of all make sure you have installed Emacs version 23 or higher.
+You could install this and have my working setup, but lets be honest,
+why would you?
 
 Fetch the emacs source files:
 
-    $ git clone git://github.com/rejeep/emacs.git ~/.emacs.d
+    $ git clone git://github.com/battlemidget/emacs.git ~/.emacs.d
 
 Fetch my snippets submodule:
 
