@@ -357,6 +357,8 @@
 (use-package web-beautify
   :bind ("C-c t" . web-beautify-js))
 
+(use-package mmm-mako)
+
 ;;;; Bindings
 
 (bind-key "C-a" 'back-to-indentation-or-beginning-of-line)

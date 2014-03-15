@@ -39,6 +39,7 @@
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "multiple-cursors")
+(depends-on "mmm-mako")
 (depends-on "nvm")
 (depends-on "nyan-mode")
 (depends-on "org")
