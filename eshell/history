@@ -1,0 +1,2 @@
+perl -nlew 'print "$1" if /cloud-installer\s\((\d\.\d+.*)\)/' changelog 
+perl -nlew 'print $1 if /cloud-installer\s\((\d\.\d+.*)\)/' changelog 
