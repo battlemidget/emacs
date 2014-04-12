@@ -59,7 +59,7 @@
 (depends-on "s")
 (depends-on "sass-mode")
 (depends-on "scss-mode")
-(depends-on "smartparens")
+;(depends-on "smartparens")
 (depends-on "smex")
 (depends-on "swoop")
 (depends-on "ujelly-theme")
