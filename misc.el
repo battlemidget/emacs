@@ -49,7 +49,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; Set font size
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 120)
 
 ;; Do not ask for confirmation
 (setq confirm-nonexistent-file-or-buffer nil)

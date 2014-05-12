@@ -6,3 +6,5 @@ cd ..
 cd websocket-client-py2/
 pyenv versions
 pyenv shell websocket-client-py2
+xit
+exit
