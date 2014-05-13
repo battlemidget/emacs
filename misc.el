@@ -50,6 +50,7 @@
 
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
+(add-to-list 'default-frame-alist '(font . "Ubuntu Mono-12"))
 
 ;; Do not ask for confirmation
 (setq confirm-nonexistent-file-or-buffer nil)

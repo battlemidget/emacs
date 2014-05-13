@@ -37,6 +37,7 @@
 (depends-on "idomenu")
 (depends-on "jade-mode")
 (depends-on "js2-mode")
+(depends-on "lua-mode")
 (depends-on "macrostep")
 (depends-on "magit")
 (depends-on "markdown-mode")
