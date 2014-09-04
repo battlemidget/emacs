@@ -50,7 +50,7 @@
 
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
-(add-to-list 'default-frame-alist '(font . "Inconsolata-14"))
+(add-to-list 'default-frame-alist '(font . "Source Code Pro-14"))
 
 ;; Do not ask for confirmation
 (setq confirm-nonexistent-file-or-buffer nil)
