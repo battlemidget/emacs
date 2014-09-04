@@ -1,7 +1,9 @@
 (source gnu)
 (source melpa)
 
+(depends-on "ac-nrepl")
 (depends-on "ace-jump-mode")
+(depends-on "ack")
 (depends-on "ack-and-a-half")
 (depends-on "bind-key")
 (depends-on "cask")
