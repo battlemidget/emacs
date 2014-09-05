@@ -1,4 +1,7 @@
-;;; init.el - Fragor Maximus -*- lexical-binding: t; -*-
+;;; init.el --- Fragor Maximus -*- lexical-binding: t; -*-
+;;; Commentary:
+;;;   'battlemidgets modified Emacs'
+;;; Code:
 
 (mapc
  (lambda (mode)
@@ -34,10 +37,29 @@
 
 ;;;; Packages
 (use-package autopair
-  :init (autopair-global-mode 1))
+  :init (autopair-global-mode 1)
+  :ensure t)
 
 (use-package hl-line
-  :config (set-face-background 'hl-line "#073642"))
+  :config (progn
+            (set-face-background 'hl-line "#073642")
+            (global-hl-line-mode t))
+  :ensure t)
+
+(use-package markdown-mode
+  :defer t
+  :ensure t)
+
+(use-package git-gutter
+  :defer t
+  :config
+    (dolist (face '(git-gutter:added
+                    git-gutter:deleted
+                    git-gutter:modified
+                    git-gutter:separator
+                    git-gutter:unchanged))
+      (set-face-background face (face-foreground face)))
+  :ensure t)
 
 (use-package dash
   :config (dash-enable-font-lock))
@@ -69,7 +91,7 @@
          ("C-<" . mc/mark-previous-like-this)))
 
 (use-package popwin
-  :config (setq display-buffer-function 'popwin:display-buffer))
+  :config (setq display-buffer-alist 'popwin:display-buffer))
 
 (use-package projectile
   :init (projectile-global-mode 1)
@@ -205,6 +227,21 @@
 ;;    ("M-S" . sp-split-sexp)
 ;;    ("M-J" . sp-join-sexp)
 ;;    ("C-M-t" . sp-transpose-sexp)))
+
+(use-package auto-complete
+  :defer t
+  :config (progn
+            (require 'auto-complete-config)
+            (ac-config-default)
+            (global-auto-complete-mode t))
+  :ensure t)
+
+(use-package rainbow-delimiters
+  :config (global-rainbow-delimiters-mode t)
+  :ensure t)
+
+(use-package flymake
+  :commands flymake-mode)
 
 (use-package flycheck
   :config
