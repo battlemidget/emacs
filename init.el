@@ -91,7 +91,7 @@
          ("C-<" . mc/mark-previous-like-this)))
 
 (use-package popwin
-  :config (setq display-buffer-alist 'popwin:display-buffer))
+  :init (popwin-mode 1))
 
 (use-package projectile
   :init (projectile-global-mode 1)
@@ -229,11 +229,11 @@
 ;;    ("C-M-t" . sp-transpose-sexp)))
 
 (use-package auto-complete
+  :init (global-auto-complete-mode t)
   :defer t
   :config (progn
             (require 'auto-complete-config)
-            (ac-config-default)
-            (global-auto-complete-mode t))
+            (ac-config-default))
   :ensure t)
 
 (use-package rainbow-delimiters
@@ -247,22 +247,20 @@
   :config
   (progn
     (setq flycheck-display-errors-function nil)
-    (add-hook 'after-init-hook 'global-flycheck-mode)))
+    (add-hook 'after-init-hook 'global-flycheck-mode)
+    (add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode)))
 
 (use-package flycheck-cask
   :init (add-hook 'flycheck-mode-hook 'flycheck-cask-setup))
-
-(use-package flycheck-color-mode-line
-  :init (add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
 
 (use-package yasnippet
   :init
   (progn
     (let ((snippets-dir (f-expand "snippets" user-emacs-directory)))
-      (yas/load-directory snippets-dir)
-      (setq yas/snippet-dirs snippets-dir))
+      (yas-load-directory snippets-dir)
+      (setq yas-snippet-dirs snippets-dir))
     (yas-global-mode 1)
-    (setq-default yas/prompt-functions '(yas/ido-prompt))))
+    (setq-default yas-load-directory '(yas/ido-prompt))))
 
 (use-package yaml-mode
   :mode ("\\.yml$" . yaml-mode))
