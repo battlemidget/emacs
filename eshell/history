@@ -8,3 +8,4 @@ pyenv versions
 pyenv shell websocket-client-py2
 xit
 exit
+ls

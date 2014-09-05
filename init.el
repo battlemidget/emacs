@@ -33,6 +33,8 @@
               (animate-string ";; i punch HAMSTARS!" (/ (frame-height) 2)))))
 
 ;;;; Packages
+(use-package autopair
+  :init (autopair-global-mode 1))
 
 (use-package hl-line
   :config (set-face-background 'hl-line "#073642"))
@@ -212,6 +214,9 @@
 
 (use-package flycheck-cask
   :init (add-hook 'flycheck-mode-hook 'flycheck-cask-setup))
+
+(use-package flycheck-color-mode-line
+  :init (add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
 
 (use-package yasnippet
   :init
