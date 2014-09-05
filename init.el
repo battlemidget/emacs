@@ -28,7 +28,7 @@
 (load-local "defuns")
 (load-local "misc")
 
-(load-theme 'ujelly :no-confirm)
+(load-theme 'django :no-confirm)
 
 (add-hook 'emacs-startup-hook
           (lambda ()
@@ -47,7 +47,7 @@
 
 (use-package hl-line
   :config (progn
-            (set-face-background 'hl-line "#073642")
+;            (set-face-background 'hl-line "#073642")
             (global-hl-line-mode t))
   :ensure t)
 
