@@ -30,6 +30,7 @@
 (depends-on "discover")
 (depends-on "drag-stuff")
 (depends-on "ecukes")
+(depends-on "editorconfig")
 (depends-on "epl")
 (depends-on "ert-async")
 (depends-on "exec-path-from-shell")
