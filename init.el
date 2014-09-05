@@ -110,6 +110,7 @@
 (use-package misc
   :bind ("M-z" . zap-up-to-char))
 
+(defvar magit-default-tracking-name-function)
 (use-package magit
   :init
   (progn
@@ -167,7 +168,7 @@
       :config
       (progn
         (setq rspec-use-rvm t)
-        (setq rspec-use-rake-flag nil)
+        (setq rspec-use-rake-when-possible nil)
         (defadvice rspec-compile (around rspec-compile-around activate)
           "Use BASH shell for running the specs because of ZSH issues."
           (let ((shell-file-name "/bin/bash"))
@@ -283,12 +284,14 @@
 (use-package css-mode
   :config (setq css-indent-offset 2))
 
+(defvar js-indent-level)
 (use-package js-mode
   :mode ("\\.json$" . js-mode)
   :init
   (progn
     (add-hook 'js-mode-hook (lambda () (setq js-indent-level 2)))))
 
+(defvar join-line-or-lines-in-region)
 (use-package js2-mode
   :mode (("\\.js$" . js2-mode)
          ("Jakefile$" . js2-mode))
@@ -301,6 +304,7 @@
     (add-hook 'js2-mode-hook (lambda ()
                                (bind-key "M-j" join-line-or-lines-in-region)))))
 
+(defvar coffee-cleanup-whitespace)
 (use-package coffee-mode
   :config
   (progn
@@ -335,6 +339,9 @@
 (use-package haml-mode)
 (use-package sass-mode)
 
+(defvar eshell-visual-commands)
+(defvar eshell-history-size)
+(defvar eshell-save-history-on-exit)
 (use-package eshell
   :bind ("M-e" . eshell)
   :init
@@ -346,6 +353,7 @@
     (setq eshell-history-size 5000)
     (setq eshell-save-history-on-exit t)))
 
+(defvar ido-use-face)
 (use-package flx-ido
   :init (flx-ido-mode 1)
   :config (setq ido-use-face nil))
