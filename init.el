@@ -35,10 +35,15 @@
             (when (string= (buffer-name) "*scratch*")
               (animate-string ";; i punch HAMSTARS!" (/ (frame-height) 2)))))
 
+
 ;;;; Packages
 (use-package autopair
   :init (autopair-global-mode 1)
   :ensure t)
+
+(use-package py-autopep8
+  :config
+  (add-hook 'before-save-hook 'py-autopep8-before-save))
 
 (use-package hl-line
   :config (progn
