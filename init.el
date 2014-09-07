@@ -28,7 +28,7 @@
 (load-local "defuns")
 (load-local "misc")
 
-(load-theme 'django :no-confirm)
+(load-theme 'spacegray :no-confirm)
 
 (add-hook 'emacs-startup-hook
           (lambda ()
