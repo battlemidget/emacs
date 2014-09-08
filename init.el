@@ -90,6 +90,10 @@
 ;; (use-package smex
 ;;   :init (smex-initialize)
 ;;   :bind ("M-x" . smex))
+(use-package neotree
+  :config
+  (progn
+    (global-set-key [f8] 'neotree-toggle)))
 
 (use-package helm
   :config

@@ -129,6 +129,7 @@
 (depends-on "md-readme")
 (depends-on "mmm-mako")
 (depends-on "multiple-cursors")
+(depends-on "neotree")
 (depends-on "nginx-mode")
 (depends-on "noflet")
 (depends-on "nvm")
