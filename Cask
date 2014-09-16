@@ -177,6 +177,7 @@
 (depends-on "sass-mode")
 (depends-on "scss-mode")
 (depends-on "seti-theme")
+(depends-on "smartparens")
 (depends-on "smex")
 (depends-on "spacegray-theme")
 (depends-on "sphinx-doc")
