@@ -87,3 +87,6 @@
 
 ;; Show column number in mode line
 (column-number-mode 1)
+
+;; alias perl-mode to cperl-mode
+(defalias 'perl-mode 'cperl-mode)
