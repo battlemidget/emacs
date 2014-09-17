@@ -35,6 +35,7 @@
 (depends-on "color-theme")
 (depends-on "color-theme-sanityinc-tomorrow")
 (depends-on "commander")
+(depends-on "cperl-mode")
 (depends-on "cyberpunk-theme")
 (depends-on "d-mode")
 (depends-on "dakrone-theme")
