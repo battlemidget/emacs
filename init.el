@@ -28,7 +28,7 @@
 (load-local "defuns")
 (load-local "misc")
 
-(load-theme 'spacegray :no-confirm)
+(load-theme 'badger :no-confirm)
 
 (add-hook 'emacs-startup-hook
           (lambda ()
