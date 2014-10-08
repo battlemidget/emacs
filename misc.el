@@ -83,10 +83,13 @@
 (setq suggest-key-bindings nil)
 
 ;; Make default mode Emacs lisp mode
-(setq default-major-mode 'emacs-lisp-mode)
+(setq major-mode 'text-mode)
 
 ;; Show column number in mode line
 (column-number-mode 1)
 
 ;; alias perl-mode to cperl-mode
 (defalias 'perl-mode 'cperl-mode)
+
+;; erc
+(setq erc-hide-list '("JOIN" "PART" "QUIT"))

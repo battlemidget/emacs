@@ -9,3 +9,9 @@ pyenv shell websocket-client-py2
 xit
 exit
 ls
+env
+env |grep LEAN
+leankit-me-trial
+cat ~/CFG/zsh/shell_functions 
+source ~/.zshrc 
+leankit-me-trial
