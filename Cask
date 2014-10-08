@@ -179,6 +179,7 @@
 (depends-on "ruby-tools")
 (depends-on "s")
 (depends-on "sass-mode")
+(depends-on "sauron")
 (depends-on "scss-mode")
 (depends-on "seti-theme")
 (depends-on "smartparens")
