@@ -53,7 +53,7 @@
 
 ;; Set font-size for laptop
 (if (string= system-name "DRAGONRAH")
-    (add-to-list 'default-frame-alist '(font . "Source Code Pro-14"))
+    (add-to-list 'default-frame-alist '(font . "Source Code Pro-13"))
   (add-to-list 'default-frame-alist '(font . "Source Code Pro-10")))
 
 ;; Do not ask for confirmation
