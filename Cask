@@ -46,6 +46,7 @@
 (depends-on "diff-hl")
 (depends-on "dired+")
 (depends-on "dired-filter")
+(depends-on "dired-k")
 (depends-on "dired-rainbow")
 (depends-on "discover")
 (depends-on "distinguished-theme")
