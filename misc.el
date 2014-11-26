@@ -50,12 +50,11 @@
 
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
-(set-frame-font "Source Code Pro-10")
+(set-frame-font "Consolas-10")
 
 ;; Set font-size for laptop
 (if (string= system-name "DRAGONRAH")
-    (add-to-list 'default-frame-alist '(font . "Source Code Pro-13"))
-  (add-to-list 'default-frame-alist '(font . "Source Code Pro-10")))
+    (set-frame-font '(font . "Consolas-13")))
 
 ;; Do not ask for confirmation
 (setq confirm-nonexistent-file-or-buffer nil)
