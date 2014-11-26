@@ -50,6 +50,7 @@
 
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
+(set-frame-font "Source Code Pro-10")
 
 ;; Set font-size for laptop
 (if (string= system-name "DRAGONRAH")
