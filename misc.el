@@ -17,7 +17,7 @@
 
 ;; Set default browser
 (setq browse-url-browser-function 'browse-url-generic)
-(setq browse-url-generic-program "google-chrome")
+(setq browse-url-generic-program "firefox")
 
 ;; Initial major mode is Emacs Lisp mode
 (setq initial-major-mode 'emacs-lisp-mode)
@@ -93,4 +93,6 @@
 (defalias 'perl-mode 'cperl-mode)
 
 ;; erc
-(setq erc-hide-list '("JOIN" "PART" "QUIT"))
+;; (setq erc-hide-list '("JOIN" "PART" "QUIT"))
+(provide 'misc)
+;;; misc.el ends here

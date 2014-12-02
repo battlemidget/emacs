@@ -308,3 +308,6 @@ them. These include the path relative to the project root."
   (save-excursion
     (unless mark-active (mark-defun))
     (shell-command-on-region (point) (mark) "perltidier" nil t)))
+
+(provide 'defuns)
+;;; defuns.el ends here

@@ -2,7 +2,6 @@
 (source melpa)
 (source org)
 
-(depends-on "ac-cider")
 (depends-on "ac-nrepl")
 (depends-on "ace-jump-mode")
 (depends-on "ack")
@@ -21,10 +20,6 @@
 (depends-on "calmer-forest-theme")
 (depends-on "cask")
 (depends-on "cherry-blossom-theme")
-(depends-on "cider")
-(depends-on "cider-browse-ns")
-(depends-on "cider-spy")
-(depends-on "cider-tracing")
 (depends-on "cl")
 (depends-on "cl-lib-highlight")
 (depends-on "clojure-mode")
