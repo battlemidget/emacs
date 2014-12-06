@@ -17,7 +17,7 @@
 
 ;; Set default browser
 (setq browse-url-browser-function 'browse-url-generic)
-(setq browse-url-generic-program "google-chrome")
+(setq browse-url-generic-program "firefox")
 
 ;; Initial major mode is Emacs Lisp mode
 (setq initial-major-mode 'emacs-lisp-mode)
@@ -50,11 +50,12 @@
 
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
+;; (set-frame-font "Consolas-10")
+(set-frame-font "Ubuntu Mono 12")
 
 ;; Set font-size for laptop
 (if (string= system-name "DRAGONRAH")
-    (add-to-list 'default-frame-alist '(font . "Source Code Pro-13"))
-  (add-to-list 'default-frame-alist '(font . "Source Code Pro-10")))
+    (set-frame-font '(font . "Consolas-13")))
 
 ;; Do not ask for confirmation
 (setq confirm-nonexistent-file-or-buffer nil)
@@ -92,4 +93,6 @@
 (defalias 'perl-mode 'cperl-mode)
 
 ;; erc
-(setq erc-hide-list '("JOIN" "PART" "QUIT"))
+;; (setq erc-hide-list '("JOIN" "PART" "QUIT"))
+(provide 'misc)
+;;; misc.el ends here
