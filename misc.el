@@ -51,7 +51,7 @@
 ;; Set font size
 (set-face-attribute 'default nil :height 120)
 ;; (set-frame-font "Consolas-10")
-(set-frame-font "Ubuntu Mono 12")
+(set-frame-font "Ubuntu Mono 11")
 
 ;; Set font-size for laptop
 (if (string= system-name "DRAGONRAH")
