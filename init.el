@@ -511,7 +511,7 @@
        (save-buffers-kill-emacs))))
 
 (bind-key
- "C-8"
+ "C-c C-8"
  (lambda ()
    (interactive)
    (find-file (f-expand "init.el" user-emacs-directory))))
