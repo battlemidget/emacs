@@ -49,7 +49,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; Set font size
-(set-face-attribute 'default nil :height 120)
+;; (set-face-attribute 'default nil :height 120)
 ;; (set-frame-font "Consolas-10")
 (set-frame-font "Ubuntu Mono 11")
 

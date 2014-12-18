@@ -15,3 +15,5 @@ leankit-me-trial
 cat ~/CFG/zsh/shell_functions 
 source ~/.zshrc 
 leankit-me-trial
+launchpad-me
+env
