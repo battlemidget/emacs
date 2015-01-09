@@ -466,6 +466,10 @@
 
 (use-package mmm-mako)
 
+(use-package flymake-python-pyflakes
+  :init (progn
+          (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)))
+
 ;;;; Bindings
 
 (bind-key "C-a" 'back-to-indentation-or-beginning-of-line)
@@ -515,3 +519,7 @@
  (lambda ()
    (interactive)
    (find-file (f-expand "init.el" user-emacs-directory))))
+
+(provide 'init)
+
+;;; init.el ends here
