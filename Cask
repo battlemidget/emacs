@@ -76,6 +76,7 @@
 (depends-on "flymake-perlcritic")
 (depends-on "flymake-python-pyflakes")
 (depends-on "flymake-yaml")
+(depends-on "flymake-cursor")
 (depends-on "flyparens")
 (depends-on "gandalf-theme")
 (depends-on "gist")
