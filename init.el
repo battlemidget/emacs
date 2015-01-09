@@ -468,7 +468,10 @@
 
 (use-package flymake-python-pyflakes
   :init (progn
-          (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)))
+          (add-hook 'python-mode-hook 'flymake-python-pyflakes-load))
+  :bind (("C-c n" . flymake-goto-next-error)
+         ("C-c p" . flymake-goto-prev-error)))
+
 
 ;;;; Bindings
 
