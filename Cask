@@ -2,10 +2,8 @@
 (source melpa)
 (source org)
 
-(depends-on "ac-nrepl")
 (depends-on "ace-jump-mode")
 (depends-on "ack")
-(depends-on "ack-and-a-half")
 (depends-on "alect-themes")
 (depends-on "alert")
 (depends-on "ample-theme")
@@ -147,7 +145,6 @@
 (depends-on "org-ac")
 (depends-on "org-bullets")
 (depends-on "org-context")
-(depends-on "org-eldoc")
 (depends-on "org-fstree")
 (depends-on "org-gcal")
 (depends-on "org-journal")
