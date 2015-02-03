@@ -255,39 +255,6 @@
   :mode (("\\.markdown$" . markdown-mode)
          ("\\.md$" . markdown-mode)))
 
-;; (use-package smartparens
-;;   :init
-;;   (progn
-;;     (use-package smartparens-config)
-;;     (use-package smartparens-ruby)
-;;     (use-package smartparens-html)
-;;     (smartparens-global-mode 1)
-;;     (show-smartparens-global-mode 1))
-;;   :config
-;;   (progn
-;;     (setq smartparens-strict-mode t)
-;;     (setq sp-autoescape-string-quote nil)
-;;     (setq sp-autoinsert-if-followed-by-word t)
-;;     (sp-local-pair 'emacs-lisp-mode "`" nil :when '(sp-in-string-p)))
-;;   :bind
-;;   (("C-M-k" . sp-kill-sexp-with-a-twist-of-lime)
-;;    ("C-M-f" . sp-forward-sexp)
-;;    ("C-M-b" . sp-backward-sexp)
-;;    ("C-M-n" . sp-up-sexp)
-;;    ("C-M-d" . sp-down-sexp)
-;;    ("C-M-u" . sp-backward-up-sexp)
-;;    ("C-M-p" . sp-backward-down-sexp)
-;;    ("C-M-w" . sp-copy-sexp)
-;;    ("M-s" . sp-splice-sexp)
-;;    ("M-r" . sp-splice-sexp-killing-around)
-;;    ("C-)" . sp-forward-slurp-sexp)
-;;    ("C-}" . sp-forward-barf-sexp)
-;;    ("C-(" . sp-backward-slurp-sexp)
-;;    ("C-{" . sp-backward-barf-sexp)
-;;    ("M-S" . sp-split-sexp)
-;;    ("M-J" . sp-join-sexp)
-;;    ("C-M-t" . sp-transpose-sexp)))
-
 (use-package auto-complete
   :init (global-auto-complete-mode t)
   :defer t
